@@ -1,0 +1,121 @@
+body {
+  background: pink;
+
+}
+@media screen and (min-width: 480px) {
+  body{
+    background: white;
+  }
+}
+
+@media screen and (min-width:160px){
+  body{
+    background: dodgerblue;
+  }
+}
+
+div.border-radius {
+  width: 200px;
+  height: 100px;
+  background: dodgerblue;
+  border-radius: 25px;
+}
+
+p#border-img{
+  border: 100px solid transparent;
+  padding: 1px;
+  border-image: url(chrome://branding/content/firefox-wordmark.svg);
+
+}
+
+div.gradients_tb{
+  height: 200px;
+  background-color: red;
+  background-image: linear-gradient(dodgerblue,salmon);
+  background-image: linear-gradient(to left,dodgerblue, darkblue);
+
+}
+
+h1#shadows{
+  text-shadow: 20px 12px 5px tomato;
+
+}
+
+div.transitions{
+  width: 50px;
+  height: 70px;
+  background: dodgerblue;
+  transition: width 3s;
+}
+
+div.transitions:hover{
+  width: 500px
+}
+
+div.animation{
+  width: 100px;
+  height: 100px;
+  background: dodgerblue;
+  animation-name: first;
+  animation-duration: 2s;
+}
+
+@keyframes first {
+  from {background: darkblue}
+  to{background: red}
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+.tooltip .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+.button {
+  background: dodgerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: grey;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 36px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  color: red;
+}
